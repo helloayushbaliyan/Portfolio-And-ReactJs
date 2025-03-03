@@ -7,6 +7,7 @@ function App() {
     <>
     <div className=" bg-slate-950 h-screen ">
       <h1 className='text-4xl text-white text-center'>here we start making our react first portfolio</h1>
+      <h1 className='text-4xl text-white text-center'>here we deploy out project on netlify</h1>
     </div>
     </>
   )
