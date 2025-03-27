@@ -1,5 +1,6 @@
 import React from "react";
 import heroPic from "../../assets/hero-scn-pic.png";
+import starImg from "../../assets/star.png"
 import heroProfileImg from "../../assets/hero-profile-img.jpg";
 
 
@@ -7,7 +8,7 @@ export default function HeroScn(props) {
   return (
     <>
       <section>
-        <div className=" bg-[#28293e]  font-[inter] pb-10">
+        <div className=" bg-[#28293e]  font-[inter] ">
           <div className="grid md:grid-cols-2 px-4 md:px-[3rem] xl:px-[7.5rem] pt-[5rem] gap-4 ">
             <div className="text-white order-last md:order-first relative ">
               <div className="space-y-3">
@@ -20,7 +21,7 @@ export default function HeroScn(props) {
                     <span className=" hidden   lg:block">
                       <img
                         className=" absolute z-[-1] top-[-2.2rem] right-[4rem] "
-                        src=""
+                        src={starImg}
                         alt=""
                       />
                     </span>
@@ -56,7 +57,7 @@ export default function HeroScn(props) {
             </div>
             <div className="flex justify-center items-center  max-w-[80rem]">
               <img
-                className="w-full  max-w-[350px] sm:max-w-[550px]    lg:max-w-[650px] 2xl:max-w-[500px]"
+                className="w-full  sm:max-w-[550px]    lg:max-w-[650px] 2xl:max-w-[500px]"
                 src={heroPic}
                 alt=""
               />

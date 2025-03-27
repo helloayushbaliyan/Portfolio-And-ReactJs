@@ -24,7 +24,7 @@ export default function Header(props) {
           </Link>
         </div>
 
-        <ul className=" menu-scn  absolute lg:relative bg-white  lg:bg-transparent lg:text-white text-black transition-all  duration-500 lg:duration-75 font-semibold lg:w-auto lg:h-auto w-[15rem] left-[-100%] lg:left-0 top-0  h-screen flex">
+        <ul className=" menu-scn  absolute z-50 lg:relative bg-white  lg:bg-transparent lg:text-white text-black transition-all  duration-500 lg:duration-75 font-semibold lg:w-auto lg:h-auto w-[17rem] left-[-100%] lg:left-0 top-0  h-screen flex">
           <div className="flex justify space-x-[6rem] flex-col lg:flex-row mt-4">
             <NavLink
               to="/about"
