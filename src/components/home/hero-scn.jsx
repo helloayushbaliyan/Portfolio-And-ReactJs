@@ -1,6 +1,5 @@
 import React from "react";
 import heroPic from "../../assets/hero-scn-pic.png";
-// import starImg from "../../assets/star.png";
 import heroProfileImg from "../../assets/hero-profile-img.jpg";
 
 
@@ -21,7 +20,7 @@ export default function HeroScn(props) {
                     <span className=" hidden   lg:block">
                       <img
                         className=" absolute z-[-1] top-[-2.2rem] right-[4rem] "
-                        
+                        src=""
                         alt=""
                       />
                     </span>
