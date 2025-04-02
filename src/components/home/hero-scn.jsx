@@ -2,31 +2,30 @@ import React from "react";
 import heroPic from "../../assets/hero-scn-pic.png";
 import heroProfileImg from "../../assets/hero-profile-img.jpg";
 
-
 export default function HeroScn(props) {
   return (
     <>
       <section>
         <div className=" bg-[#28293e]  font-[inter] ">
-          <div className="grid md:grid-cols-2 px-4 md:px-[3rem] xl:px-[7.5rem] pt-[5rem] gap-4 ">
+          <div className="grid md:grid-cols-2 px-4 sm:px-12 md:px-[3rem] xl:px-[7.5rem] 2xl:px-[10rem]  py-[5rem] gap-4 ">
             <div className="text-white order-last md:order-first relative ">
               <div className="space-y-3">
                 <h3 className="text-xl text-[#985959]">Modern Studio</h3>
                 <div className=" relative flex">
-                  <span className="text-[3rem] z-[100] lg:text-[4rem] xl:text-[4.2rem] leading-[4.6rem] font-bold block relative">
+                  <span className="text-[3rem] z-[100] lg:text-[4rem] xl:text-[4.2rem]  2xl:text-[5rem] 2xl:leading-[5rem] leading-[4.6rem] font-bold block relative">
                     We’re Help <br className="hidden lg:block" /> To Build Your{" "}
                     <br className="hidden lg:block" />
                     Dream Project
                     <span className=" hidden   lg:block">
                       <img
                         className=" absolute z-[-1] top-[-2.2rem] right-[4rem] "
-                        src=""
+                        src="/images/star.png"
                         alt=""
                       />
                     </span>
                   </span>
                 </div>
-                <p className="text-gray-400 text-[0.96rem] leading-6">
+                <p className="text-gray-400 text-[0.96rem] leading-6 2xl:text-[1.5rem] 2xl:leading-9">
                   Agency provides a full service range including technical{" "}
                   <br className="hidden lg:block" />
                   skills, design, business understanding.
@@ -48,7 +47,10 @@ export default function HeroScn(props) {
                     />
                   </div>
                   <div className="">
-                    <p className="text-gray-400 text-[0.96rem] leading-6"> "Put themselves in the merchant's shoes"</p>
+                    <p className="text-gray-400 text-[0.96rem] 2xl:text-[1rem] leading-6">
+                      {" "}
+                      "Put themselves in the merchant's shoes"
+                    </p>
                     <button>Meta Inc.</button>
                   </div>
                 </div>

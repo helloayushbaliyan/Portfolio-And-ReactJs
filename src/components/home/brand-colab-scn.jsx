@@ -10,7 +10,7 @@ export default function BrandColabScn(props) {
 
   return (
     <>
-      <div className="px-2 md:px-[3rem] xl:px-[7.5rem] flex flex-wrap justify-evenly sm:justify-between space-y-4 py-15 border-b-3 border-[#f8e4d8]  mb-20">
+      <div className=" flex flex-wrap justify-evenly sm:justify-between space-y-4 py-15 border-b-3 border-[#f8e4d8]  mb-20">
         {brandImages.map((img) => (
           <img
             className=" object-contain scale-90"
