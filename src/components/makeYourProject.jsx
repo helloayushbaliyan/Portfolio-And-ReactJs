@@ -1,8 +1,7 @@
 import React from "react";
-import Textcard from "./textcard";
-import WhiteBtn from "./whiteBtn";
+import TextCard from "./textCard";
 
-export default function LookAwesomeScn(props) {
+export default function MakeYourProject(props) {
   const textCard = [
     {
       preHeading: "How We Work",
@@ -16,11 +15,11 @@ export default function LookAwesomeScn(props) {
   ];
   return (
     <>
-
       <div className="grid md:grid-cols-2 py-10 gap-9 lg:gap-0   ">
         <div className=" flex justify-start   lg:max-w-[80%]">
           <div className="w-[full]">
-            <Textcard data={textCard[0]} />
+            <TextCard data={textCard[0]} />
+
             <h1 className="mt-5">Read More</h1>
           </div>
         </div>

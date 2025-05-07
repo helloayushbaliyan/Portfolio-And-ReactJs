@@ -1,8 +1,6 @@
 import React from "react";
-import heroPic from "../../assets/hero-scn-pic.png";
-import heroProfileImg from "../../assets/hero-profile-img.jpg";
 
-export default function HeroScn(props) {
+export default function Heroscn(props) {
   return (
     <>
       <section>
@@ -42,7 +40,7 @@ export default function HeroScn(props) {
                   <div className="">
                     <img
                       className=" rounded-full w-[3rem]"
-                      src={heroProfileImg}
+                      src="/images/hero-profile-img.jpg"
                       alt=""
                     />
                   </div>
@@ -59,7 +57,7 @@ export default function HeroScn(props) {
             <div className="flex justify-center items-center  max-w-[80rem]">
               <img
                 className="w-full  sm:max-w-[550px]    lg:max-w-[650px] 2xl:max-w-[500px]"
-                src={heroPic}
+                src="/images/hero-scn-pic.png"
                 alt=""
               />
             </div>

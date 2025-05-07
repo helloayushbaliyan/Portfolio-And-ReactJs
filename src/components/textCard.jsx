@@ -1,7 +1,7 @@
 import React from "react";
 import WhiteBtn from "./whiteBtn";
 
-export default function Textcard({ data }) {
+export default function TextCard({ data }) {
   return (
     <>
       <div className=" ">

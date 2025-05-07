@@ -1,14 +1,9 @@
 import React from "react";
-
-import logo from "../../assets/site-logo.svg";
-import menu from "../../assets/menu.svg";
-import { Link, NavLink } from "react-router";
-
-export default function Header(props) {
+import { Link, NavLink } from "react-router-dom";
+export default function Header() {
   const slider = () => {
     document.querySelector(".menu-scn").classList.toggle("left-[0%]");
   };
-
   return (
     <>
       <div
@@ -20,7 +15,11 @@ export default function Header(props) {
       >
         <div className="">
           <Link to="/">
-            <img className="w-full lg:mt-1" src={logo} alt="" />
+            <img
+              className="w-full lg:mt-1"
+              src="/images/site-logo.svg"
+              alt=""
+            />
           </Link>
         </div>
 
@@ -88,8 +87,8 @@ export default function Header(props) {
             <div className="w-12">
               <img
                 className="border-2 border-solid border-gray-500 p-[8px] rounded-sm hover:scale-110 transition duration-200"
-                src={menu}
-                alt=""
+                src="/images/menu.svg"
+                alt="menu_svg"
               />
             </div>
           </div>

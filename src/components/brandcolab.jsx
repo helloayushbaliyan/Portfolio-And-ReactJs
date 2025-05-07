@@ -1,5 +1,5 @@
 import React from "react";
-export default function BrandColabScn(props) {
+export default function Brandcolab(props) {
   const brandImages = [
     { id: 1, src: "/images/digital-site-img.png" },
     { id: 2, src: "/images/vortex-img.png" },
