@@ -7,6 +7,8 @@ import MakeYourProject from "../components/makeYourProject";
 import VideoReel from "../components/videoReel";
 import NewLook from "../components/newLook";
 import FeaturesScn from "../components/featuresScn";
+import MakingComplex from "../components/makingComplex";
+import OurAgency from "../components/ourAgency";
 
 export default function Homepage(props) {
   return (
@@ -23,6 +25,8 @@ export default function Homepage(props) {
         <VideoReel />
         <NewLook />
         <FeaturesScn />
+        <MakingComplex />
+        <OurAgency />
       </div>
     </>
   );

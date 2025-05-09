@@ -14,6 +14,21 @@ export default function FeaturesScn(props) {
     },
   ];
 
+  const help_list = [
+    {
+      title: "Professional",
+      description:
+        "Full service range including technical skills, design.",
+      buttonText: "",
+    },
+    {
+      title: "Accessibility",
+      description:
+        "Agency Business understanding, ability to put themselves.",
+      buttonText: "",
+    },
+  ];
+
   return (
     <>
       <div className="grid md:grid-cols-[0.6fr_1fr] gap-9 lg:gap-[7rem] 2xl:gap-[9rem]  pt-[8rem]   ">
@@ -31,8 +46,11 @@ export default function FeaturesScn(props) {
           </div>
         </div>
         <div className=" grid sm:grid-cols-2 gap-2 ">
-          <FeaturesCard />
-          <FeaturesCard />
+          {help_list.map((item) => (
+            <div className="">
+              <FeaturesCard data={item} />
+            </div>
+          ))}
         </div>
       </div>
     </>

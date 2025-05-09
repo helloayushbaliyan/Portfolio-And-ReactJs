@@ -12,38 +12,43 @@ export default function NewLook(props) {
         "text-[2.2rem]  z-[100] lg:text-[{3rem}] xl:text-[3.5rem]  2xl:text-[5rem]  leading-[3.2rem] 2xl:leading-[6rem] md:leading-[4rem]",
     },
   ];
+  const list = [
+    {
+      list_items: "Range including technical skills",
+      id:1
+    },
+    {
+      list_items: "Business understanding",
+      id:2
+    },
+    {
+      list_items: "Partner on the long run",
+      id:3
+    },
+  ];
+
+
   return (
     <>
       <div className="grid md:grid-cols-2  pt-[8rem] gap-9 lg:gap-[8rem] 2xl:gap-[9rem]  ">
         <div className="max-w-[80rem] order-last md:order-first">
           <div className=" xl:mt-12  2xl:mt-0">
             <TextCard data={textCard[0]} />
-
+            <ul className="space-y-4 mb-4 text-[#b9a397]">
+              {list.map((item) => (
+                <li key={item.id} className="flex space-x-6">
+                  <div className="bg-[#ef6d57]  rounded-full">
+                    <img className="w-7" src="/images/check.svg" alt="" />
+                  </div>
+                  <span>{item.list_items}</span>
+                </li>
+              ))}
+            </ul>
             <div className="space-y-4">
               <h1 className="text-[21px] font-normal">
                 Service range including technical skills, design, business
                 understanding.
               </h1>
-              <ul className="space-y-4 text-[#b9a397]">
-                <li className="flex space-x-6">
-                  <div className="bg-[#ef6d57]  rounded-full">
-                    <img className="w-7" src="/images/check.svg" alt="" />
-                  </div>
-                  <span>Range including technical skills</span>
-                </li>
-                <li className="flex space-x-6">
-                  <div className="bg-[#ef6d57] rounded-full">
-                    <img className="w-7" src="/images/check.svg" alt="" />
-                  </div>
-                  <span>Business understanding</span>
-                </li>
-                <li className="flex space-x-6">
-                  <div className="bg-[#ef6d57] rounded-full">
-                    <img className="w-7" src="/images/check.svg" alt="" />
-                  </div>
-                  <span>Partner on the long run</span>
-                </li>
-              </ul>
             </div>
           </div>
         </div>

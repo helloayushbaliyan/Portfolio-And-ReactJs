@@ -54,9 +54,9 @@ export default function Heroscn(props) {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center items-center  max-w-[80rem]">
+            <div className="flex justify-center md:justify-start  items-center max-w-[80rem]  ">
               <img
-                className="w-full  sm:max-w-[550px]    lg:max-w-[650px] 2xl:max-w-[500px]"
+                className="w-full md:object-contain sm:max-w-[40rem] md:max-w-[80rem]    xl:max-w-[80rem] 2xl:max-w-[80rem]  sm:max-h-[100%]  xl:max-h-[40rem] 2xl:max-h-[50rem]"
                 src="/images/hero-scn-pic.png"
                 alt=""
               />
