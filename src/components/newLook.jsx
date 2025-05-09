@@ -34,7 +34,7 @@ export default function NewLook(props) {
         <div className="max-w-[80rem] order-last md:order-first">
           <div className=" xl:mt-12  2xl:mt-0">
             <TextCard data={textCard[0]} />
-            <ul className="space-y-4 mb-4 text-[#b9a397]">
+            <ul className="space-y-4 mb-4 text-[#867165]">
               {list.map((item) => (
                 <li key={item.id} className="flex space-x-6">
                   <div className="bg-[#ef6d57]  rounded-full">

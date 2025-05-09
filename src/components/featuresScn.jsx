@@ -7,24 +7,24 @@ export default function FeaturesScn(props) {
     {
       preHeading: "Features",
       title: "",
+      title2: "",
       subHeading: "",
       description: "",
       textSize:
         "text-[2.2rem]  z-[100] lg:text-[{3rem}] xl:text-[3.5rem]  2xl:text-[5rem]  leading-[3.2rem] 2xl:leading-[6rem] md:leading-[4rem]",
+        profileSrc:""
     },
   ];
 
   const help_list = [
     {
       title: "Professional",
-      description:
-        "Full service range including technical skills, design.",
+      description: "Full service range including technical skills, design.",
       buttonText: "",
     },
     {
       title: "Accessibility",
-      description:
-        "Agency Business understanding, ability to put themselves.",
+      description: "Agency Business understanding, ability to put themselves.",
       buttonText: "",
     },
   ];

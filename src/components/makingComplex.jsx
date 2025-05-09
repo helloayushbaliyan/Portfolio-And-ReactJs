@@ -30,7 +30,7 @@ export default function MakingComplex(props) {
           <div className=" ">
             {/* <TextCard data={textCard[0]} />
             <WhiteBtn btntxt="About US" /> */}
-            <TextCard data={textCard} />
+            <TextCard data={textCard} block="!block" />
             <WhiteBtn btntxt="Explore" />
           </div>
         </div>
