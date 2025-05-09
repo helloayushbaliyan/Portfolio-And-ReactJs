@@ -49,11 +49,11 @@ Make sure you have **Node.js** and **npm** or **yarn** installed on your system.
 ---
 ## 4 📦 Folder Structure (Optional)
 
-├── components/       # Reusable components like Navbar, Footer
-├── pages/            # All route-based pages
-├── public/           # Static assets
-├── styles/           # Custom global styles
-└── README.md
+- ├── components/       # Reusable components like Navbar, Footer
+- ├── pages/            # All route-based pages
+- ├── public/           # Static assets
+- ├── styles/           # Custom global styles
+- └── README.md
 
 # 🤝 Contributing
 This is a personal project, but feedback or suggestions are always welcome!
@@ -61,9 +61,9 @@ Feel free to fork the repo or open an issue.
 
 # 📬 Contact
 Want to work together? Have feedback or questions?
-📧 Email: helloayushbaliyan@gmail.com
-🔗 LinkedIn: https://www.linkedin.com/in/hello-ayush-baliyan/
-💻 GitHub: https://github.com/helloayushbaliyan/Portfolio-And-ReactJs
+- 📧 Email: helloayushbaliyan@gmail.com
+- 🔗 LinkedIn: https://www.linkedin.com/in/hello-ayush-baliyan/
+- 💻 GitHub: https://github.com/helloayushbaliyan/Portfolio-And-ReactJs
 
 
 # 🚧 Ongoing Updates
