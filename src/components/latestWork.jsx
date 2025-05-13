@@ -1,12 +1,23 @@
 import React from "react";
 import TextCard from "./textCard";
 import WhiteBtn from "./whiteBtn";
+import Helpcompanies from "./helpcompanies";
+import Explorefuture from "./explorefuture";
 
 export default function LatestWork(props) {
   const textCard = [
     {
       preHeading: "Portfolio",
       title: "Latest Work",
+      subHeading: "",
+      description: "",
+      textSize:
+        "text-[2.2rem]  z-[100] lg:text-[{3rem}] xl:text-[3.5rem] text-white   2xl:text-[5rem]  leading-[3.2rem] 2xl:leading-[6rem] md:leading-[4rem]",
+      profileSrc: "",
+    },
+    {
+      preHeading: "Events",
+      title: "Explore Future Conferences",
       subHeading: "",
       description: "",
       textSize:
@@ -75,6 +86,35 @@ export default function LatestWork(props) {
       id: 6,
     },
   ];
+
+  const futureCard = [
+    {
+      day: 3,
+      month: "Novemberbr",
+      year: "2021",
+      time: "9:00 am – 3:00 pm",
+      title: "Design Weeks",
+      description:
+        "Digital agency is a business you hire to outsource your digital.",
+    },
+    {
+      day: 15,
+      month: "Novemberbr",
+      year: "2021",
+      time: "1:00 pm – 8:00 pm",
+      title: "Interior Design",
+      description: "Marketing efforts, instead of handling in-house.",
+    },
+    {
+      day: 2,
+      month: "Novemberbr",
+      year: "2021",
+      time: "10:00 am – 2:00 pm",
+      title: "The F design events",
+      description:
+        "Provide your business with a variety of digital solutions to promote.",
+    },
+  ];
   return (
     <>
       <div className="bg-[#28293e] mt-[6rem]">
@@ -129,6 +169,31 @@ export default function LatestWork(props) {
                       {list.subtitle}
                     </h1>
                   </div>
+                </div>
+              ))}
+            </div>
+            <div className="flex justify-center">
+              <WhiteBtn btntxt="Explore More" />
+            </div>
+          </div>
+
+          <div className="mt-[10rem]">
+            <Helpcompanies />
+          </div>
+
+          <div className="mt-[7rem]">
+            <div className=" font-[inter] text-center  ">
+              <div className="">
+                <div className="flex justify-center   ">
+                  <TextCard key={work.id} data={textCard[1]} />
+                </div>
+              </div>
+            </div>
+
+            <div className="grid lg:grid-cols-3 gap-10 mt-[2rem]">
+              {futureCard.map((card) => (
+                <div className="">
+                  <Explorefuture data={card} />
                 </div>
               ))}
             </div>
