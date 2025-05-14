@@ -3,6 +3,8 @@ import TextCard from "./textCard";
 import WhiteBtn from "./whiteBtn";
 import Helpcompanies from "./helpcompanies";
 import Explorefuture from "./explorefuture";
+import Teamof from "./teamof";
+import FounderwordsScn from "./founderwordsScn";
 
 export default function LatestWork(props) {
   const textCard = [
@@ -17,7 +19,8 @@ export default function LatestWork(props) {
     },
     {
       preHeading: "Events",
-      title: "Explore Future Conferences",
+      title: "Explore Future",
+      title2: "Conferences",
       subHeading: "",
       description: "",
       textSize:
@@ -117,7 +120,7 @@ export default function LatestWork(props) {
   ];
   return (
     <>
-      <div className="bg-[#28293e] mt-[6rem]">
+      <div className="bg-[#28293e] mt-[6rem] w-full box-border">
         <div className="  px-4 sm:px-12 md:px-[3rem] xl:px-[7.5rem] 2xl:px-[10rem]  py-[5rem] space-y-[5rem]">
           <div className=" font-[inter] text-center  ">
             <div className="">
@@ -200,6 +203,13 @@ export default function LatestWork(props) {
             <div className="flex justify-center">
               <WhiteBtn btntxt="Explore More" />
             </div>
+          </div>
+
+          <div className="text-white">
+            <Teamof />
+          </div>
+          <div className="">
+            <FounderwordsScn />
           </div>
         </div>
       </div>

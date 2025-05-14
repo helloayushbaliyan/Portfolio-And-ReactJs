@@ -20,7 +20,7 @@ export default function Explorefuture({ data }) {
         </div>
         <div className="space-y-4 mt-9">
           <h1 className="text-2xl font-[600]">{data.title}</h1>
-          <p className="text-[#b1b2b9] text-[14.5px] text-justify leading-8 line-clamp-2">
+          <p className="text-[#b1b2b9] text-[14.5px] text-justify leading-8 line-clamp-2 2xl:line-clamp-1">
             {data.description}
           </p>
           <button className="text-md">Explore More</button>
