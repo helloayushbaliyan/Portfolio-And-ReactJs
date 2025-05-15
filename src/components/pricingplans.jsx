@@ -27,6 +27,9 @@ export default function Pricingplans(props) {
       benifits_1: "Brand Design",
       benifits_2: "Market Analysis",
       benifits_3: "Production",
+      button: "poppuler",
+
+      display: "hidden",
     },
     {
       subscriptioTitle: "Design",
@@ -36,6 +39,8 @@ export default function Pricingplans(props) {
       benifits_1: "Brand Design",
       benifits_2: "Market Analysis",
       benifits_3: "Production",
+      button: "poppuler",
+      display: "block",
     },
     {
       subscriptioTitle: "Design+Code",
@@ -45,6 +50,9 @@ export default function Pricingplans(props) {
       benifits_1: "Brand Design",
       benifits_2: "Market Analysis",
       benifits_3: "Production",
+      button: "poppuler",
+
+      display: "hidden",
     },
   ];
   return (
@@ -55,13 +63,14 @@ export default function Pricingplans(props) {
             <TextCard data={textCard[0]} />
           </div>
         </div>
-        <div className="grid grid-cols-3">
-          {priceList.map((price) => (
-            <div className="">
-              <Pricingcard pricedata={price} />
-              
-            </div>
-          ))}
+        <div className="mt-10">
+          <div className="grid md:grid-cols-3 items-end">
+            {priceList.map((price) => (
+              <div className=" ">
+                <Pricingcard pricedata={price} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </>
