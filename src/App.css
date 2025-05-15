@@ -1,0 +1,17 @@
+.rating_card .rating_description {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  transition: all;
+  animation-duration: 1s;
+}
+
+.rating_card:hover .rating_description {
+  overflow: visible;
+  display: block;
+  -webkit-box-orient: horizontal;
+  -webkit-line-clamp: unset;
+  transition: all;
+  animation-duration: 1s;
+}
