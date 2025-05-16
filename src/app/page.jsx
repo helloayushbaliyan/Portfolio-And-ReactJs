@@ -12,6 +12,7 @@ import OurAgency from "../components/ourAgency";
 import LatestWork from "../components/latestWork";
 import Clientsaying from "../components/clientsaying";
 import Pricingplans from "../components/pricingplans";
+import Faqscn from "../components/faqscn";
 
 export default function Homepage(props) {
   return (
@@ -37,6 +38,7 @@ export default function Homepage(props) {
       <div className="px-4 sm:px-12 md:px-[3rem] xl:px-[7.5rem] 2xl:px-[10rem]  mb-[20rem]">
         <Clientsaying/>
         <Pricingplans/>
+        <Faqscn/>
       </div>
     </>
   );
