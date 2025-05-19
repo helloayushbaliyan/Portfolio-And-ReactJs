@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Footer(props) {
   return (
@@ -6,16 +7,74 @@ export default function Footer(props) {
       <div className="px-4 sm:px-12 md:px-[3rem] xl:px-[7.5rem] 2xl:px-[10rem] ">
         <div className="flex space-y-5 sm:space-y-0 flex-col justify-center items-center sm:items-start sm:flex-row sm:justify-between border-b border-b-gray-300 py-[4rem]">
           <div className="">
-            <h1 className="text-2xl font-bold">Agency</h1>
+            <Link to="/">
+              <h1 className="text-2xl font-bold">Agency</h1>
+            </Link>
           </div>
           <div className="space-y-3 text-center">
             <h1 className="text-[20px] text-[#ef6d58] uppercase">menu</h1>
 
             <ul className="space-y-2">
-              <li>About</li>
-              <li>Services</li>
-              <li>Blog</li>
-              <li>Contact</li>
+              <li>
+                <NavLink
+                  to="/about"
+                  className={({ isActive }) =>
+                    `
+              text-black
+           ${isActive ? " text-red-500" : "text-black"}
+             transition duration-200
+             px-4 py-2 rounded-3xl
+            `
+                  }
+                >
+                  About
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/services"
+                  className={({ isActive }) =>
+                    `
+              text-black
+           ${isActive ? " text-red-500" : "text-black"}
+             transition duration-200
+             px-4 py-2 rounded-3xl
+            `
+                  }
+                >
+                  Services
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/blog"
+                  className={({ isActive }) =>
+                    `
+              text-black
+           ${isActive ? " text-red-500" : "text-black"}
+             transition duration-200
+             px-4 py-2 rounded-3xl
+            `
+                  }
+                >
+                  Blog
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/contact"
+                  className={({ isActive }) =>
+                    `
+              text-black
+           ${isActive ? " text-red-500" : "text-black"}
+             transition duration-200
+             px-4 py-2 rounded-3xl
+            `
+                  }
+                >
+                  Contact
+                </NavLink>
+              </li>
             </ul>
           </div>
           <div className="space-y-3 text-center">

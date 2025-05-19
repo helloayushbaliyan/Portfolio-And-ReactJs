@@ -9,14 +9,12 @@ export default function Header() {
       <div
         className="
         text-white text-[15px]   flex justify-between px-4 md:px-[3rem] xl:px-[7.5rem] py-6 relative
-         font-[inter]
-         
-      "
+         font-[inter]"
       >
         <div className="">
           <Link to="/">
             <img
-              className="w-full lg:mt-1"
+              className="w-full lg:mt-2"
               src="/images/site-logo.svg"
               alt=""
             />
@@ -24,14 +22,15 @@ export default function Header() {
         </div>
 
         <ul className=" menu-scn  absolute z-50 lg:relative bg-white  lg:bg-transparent lg:text-white text-black transition-all  duration-500 lg:duration-75 font-semibold lg:w-auto lg:h-auto w-[17rem] left-[-100%] lg:left-0 top-0  h-screen flex">
-          <div className="flex justify space-x-[6rem] flex-col lg:flex-row mt-4">
+          <div className="flex justify space-x-[3rem] flex-col lg:flex-row mt-4">
             <NavLink
               to="/about"
               className={({ isActive }) =>
                 `
               text-black
-           ${isActive ? "text-orange-400" : "lg:text-white"}
+           ${isActive ? "text-white bg-[#ef6d58]" : "lg:text-white"}
              transition duration-200
+             px-4 py-2 rounded-3xl
             `
               }
             >
@@ -42,32 +41,35 @@ export default function Header() {
               className={({ isActive }) =>
                 `
             text-black
-           ${isActive ? "text-orange-400" : "lg:text-white"}
+           ${isActive ? "text-white bg-[#ef6d58]" : "lg:text-white"}
              transition duration-200
+             px-4 py-2 rounded-3xl
             `
               }
             >
               <li>Services</li>
             </NavLink>
             <NavLink
-              to="/pricing"
+              to="/portfolio"
               className={({ isActive }) =>
                 `
            text-black
-           ${isActive ? "text-orange-400" : "lg:text-white"}
+           ${isActive ? "text-white bg-[#ef6d58]" : "lg:text-white"}
              transition duration-200
+             px-4 py-2 rounded-3xl
             `
               }
             >
-              <li>Pricing</li>
+              <li>Portfolio</li>
             </NavLink>
             <NavLink
               to="/blog"
               className={({ isActive }) =>
                 `
           text-black
-           ${isActive ? "text-orange-400" : "lg:text-white"}
+           ${isActive ? "text-white bg-[#ef6d58]" : "lg:text-white"}
              transition duration-200
+             px-4 py-2 rounded-3xl
             `
               }
             >
@@ -77,12 +79,14 @@ export default function Header() {
         </ul>
 
         <div className=" ">
-          <button
-            className="border-gray-600 hover:border-black hover:bg-white hover:text-black rounded-sm hover:scale-110 transition duration-200 lg:block hidden border-3 
+          <NavLink to="/contact">
+            <button
+              className="border-gray-600 hover:border-black hover:bg-white hover:text-black rounded-sm hover:scale-110 transition duration-200 lg:block hidden border-3 
           px-10 py-2 mt-2 "
-          >
-            Contact
-          </button>
+            >
+              Contact
+            </button>
+          </NavLink>
           <div onClick={slider} className="  lg:hidden">
             <div className="w-12">
               <img
