@@ -21,7 +21,7 @@ export default function Faq(props) {
         open={open === 1}
         onClick={() => handleOpen(1)}
       >
-        <AccordionHeader className="text-xl sm:text-2xl   font-[650] ">
+        <AccordionHeader className="text-xl sm:text-2xl border-b-0   font-[650] ">
           <div className="flex justify-between w-full">
             <h1>A digital agency is a business</h1>
             <img
@@ -46,7 +46,7 @@ export default function Faq(props) {
         open={open === 2}
         onClick={() => handleOpen(2)}
       >
-        <AccordionHeader className="text-xl sm:text-2xl   font-[650] ">
+        <AccordionHeader className="text-xl sm:text-2xl border-b-0  font-[650] ">
           <div className="flex justify-between w-full">
             <h1>Hire to outsource your digital</h1>
             <img
@@ -71,7 +71,7 @@ export default function Faq(props) {
         open={open === 3}
         onClick={() => handleOpen(3)}
       >
-        <AccordionHeader className="text-xl sm:text-2xl   font-[650] ">
+        <AccordionHeader className="text-xl sm:text-2xl border-b-0  font-[650] ">
           <div className="flex justify-between w-full">
             <h1>Marketing efforts</h1>
             <img
@@ -96,7 +96,7 @@ export default function Faq(props) {
         open={open === 4}
         onClick={() => handleOpen(4)}
       >
-        <AccordionHeader className="text-xl sm:text-2xl   font-[650] ">
+        <AccordionHeader className="text-xl sm:text-2xl border-b-0  font-[650] ">
           <div className="flex justify-between w-full">
             <h1>Can provide your business+</h1>
             <img
