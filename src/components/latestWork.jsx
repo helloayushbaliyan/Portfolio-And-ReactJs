@@ -5,6 +5,8 @@ import Helpcompanies from "./helpcompanies";
 import Explorefuture from "./explorefuture";
 import Teamof from "./teamof";
 import FounderwordsScn from "./founderwordsScn";
+import SuccesAchived from "./succesAchived";
+import { Link } from "react-router-dom";
 
 export default function LatestWork(props) {
   const textCard = [
@@ -14,7 +16,7 @@ export default function LatestWork(props) {
       subHeading: "",
       description: "",
       textSize:
-        "text-[2.2rem]    lg:text-[{3rem}] xl:text-[3.5rem] text-white   2xl:text-[5rem]  leading-[3.2rem] 2xl:leading-[6rem] md:leading-[4rem]",
+        "text-[2.2rem]  z-[100] lg:text-[{3rem}] xl:text-[3.5rem] text-white   2xl:text-[5rem]  leading-[3.2rem] 2xl:leading-[6rem] md:leading-[4rem]",
       profileSrc: "",
     },
     {
@@ -24,7 +26,7 @@ export default function LatestWork(props) {
       subHeading: "",
       description: "",
       textSize:
-        "text-[2.2rem]    lg:text-[{3rem}] xl:text-[3.5rem] text-white   2xl:text-[5rem]  leading-[3.2rem] 2xl:leading-[6rem] md:leading-[4rem]",
+        "text-[2.2rem]  z-[100] lg:text-[{3rem}] xl:text-[3.5rem] text-white   2xl:text-[5rem]  leading-[3.2rem] 2xl:leading-[6rem] md:leading-[4rem]",
       profileSrc: "",
     },
   ];
@@ -128,14 +130,7 @@ export default function LatestWork(props) {
                 <TextCard key={work.id} data={textCard[0]} />
               </div>
               <div className="hidden md:flex justify-center  space-x-12 mx-auto mt-8">
-                {work.map((work) => (
-                  <p is key={work.sucess} className=" relative text-[#91919b]">
-                    {work.title}
-                    <span className=" absolute top-[-16px] right-[-16px]">
-                      {work.sucess}
-                    </span>
-                  </p>
-                ))}
+                <SuccesAchived/>
               </div>
               <select
                 className="w-full bg-white outline-0 rounded-xl text-xl py-4 px-2 md:hidden"
@@ -175,9 +170,9 @@ export default function LatestWork(props) {
                 </div>
               ))}
             </div>
-            <div className="flex justify-center">
+            <Link to="/portfolio" className="flex justify-center">
               <WhiteBtn btntxt="Explore More" />
-            </div>
+            </Link>
           </div>
 
           <div className="mt-[10rem]">
