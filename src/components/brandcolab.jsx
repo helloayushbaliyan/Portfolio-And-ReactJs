@@ -10,7 +10,7 @@ export default function Brandcolab(props) {
 
   return (
     <>
-      <div className=" flex flex-wrap justify-evenly sm:justify-between space-y-4 py-15 border-b-3 border-[#f8e4d8]  mb-20">
+      <div className=" flex flex-wrap justify-evenly sm:justify-between space-y-4 py-15   mb-20">
         {brandImages.map((img) => (
           <img
             className=" object-contain scale-90"

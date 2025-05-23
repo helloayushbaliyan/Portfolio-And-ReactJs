@@ -1,6 +1,7 @@
 import React from "react";
 import TextCard from "./textCard";
 import WhiteBtn from "./whiteBtn";
+import { Link } from "react-router-dom";
 
 export default function ExperienceDesignScn(props) {
   const textCard = {
@@ -28,7 +29,9 @@ export default function ExperienceDesignScn(props) {
             {/* <TextCard data={textCard[0]} />
             <WhiteBtn btntxt="About US" /> */}
             <TextCard data={textCard} />
-            <WhiteBtn btntxt="About US" />
+            <Link to="/about">
+              <WhiteBtn btntxt="About US" />
+            </Link>{" "}
           </div>
         </div>
       </div>
