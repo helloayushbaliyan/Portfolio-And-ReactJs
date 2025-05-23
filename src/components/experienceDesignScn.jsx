@@ -11,7 +11,7 @@ export default function ExperienceDesignScn(props) {
     description:
       "Ability to put themselves in the merchant's shoes. It is meant to partner on the long run, and work as an extension of the merchant's team.",
     textSize:
-      "text-[2.2rem]  z-[100] lg:text-[{3rem}] xl:text-[3.5rem]  2xl:text-[4.5rem]  leading-[3.2rem] 2xl:leading-[6rem] md:leading-[3.2rem]",
+      "text-[2.2rem]   lg:text-[{3rem}] xl:text-[3.5rem]  2xl:text-[4.5rem]  leading-[3.2rem] 2xl:leading-[6rem] md:leading-[3.2rem]",
   };
 
   return (

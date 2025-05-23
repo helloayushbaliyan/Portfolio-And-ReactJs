@@ -9,14 +9,14 @@ export default function Heroscn(props) {
             <div className="text-white order-last md:order-first relative ">
               <div className="space-y-3">
                 <h3 className="text-xl text-[#985959]">Modern Studio</h3>
-                <div className=" relative flex">
-                  <span className="text-[3rem] z-[100] lg:text-[4rem] xl:text-[4.2rem]  2xl:text-[5rem] 2xl:leading-[5rem] leading-[4.6rem] font-bold block relative">
+                <div className=" relative flex z-50">
+                  <span className="text-[3rem]  z-50  lg:text-[4rem] xl:text-[4.2rem]  2xl:text-[5rem] 2xl:leading-[5rem] leading-[4.6rem] font-bold block relative">
                     We’re Help <br className="hidden lg:block" /> To Build Your{" "}
                     <br className="hidden lg:block" />
                     Dream Project
                     <span className=" hidden   lg:block">
                       <img
-                        className=" absolute z-[-1] top-[-2.2rem] right-[4rem] "
+                        className=" absolute z-[-100] top-[-2.2rem] right-[4rem] "
                         src="/images/star.png"
                         alt=""
                       />

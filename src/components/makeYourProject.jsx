@@ -10,7 +10,7 @@ export default function MakeYourProject(props) {
       description:
         "Technical skills, design, business understanding, ability to put themselves in the merchant's shoes..",
       textSize:
-        "text-[2rem] 2xl:text-[3rem]  z-[100] lg:text-[{3rem}] xl:text-[2.5rem] leading-[3.2rem] md:leading-[2.5rem]",
+        "text-[2rem] 2xl:text-[3rem]    lg:text-[{3rem}] xl:text-[2.5rem] leading-[3.2rem] md:leading-[2.5rem]",
     },
   ];
   return (

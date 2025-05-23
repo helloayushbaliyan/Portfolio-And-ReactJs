@@ -8,7 +8,7 @@ export default function Header() {
     <>
       <div
         className="
-        text-white text-[15px]   flex justify-between px-4 md:px-[3rem] xl:px-[7.5rem] py-6 relative
+        text-white text-[15px]    flex justify-between px-4 md:px-[3rem] xl:px-[7.5rem] py-6 relative
          font-[inter]"
       >
         <div className="">
@@ -21,8 +21,8 @@ export default function Header() {
           </Link>
         </div>
 
-        <ul className=" menu-scn  absolute z-50 lg:relative bg-white  lg:bg-transparent lg:text-white text-black transition-all  duration-500 lg:duration-75 font-semibold lg:w-auto lg:h-auto w-[17rem] left-[-100%] lg:left-0 top-0  h-screen flex">
-          <div className="flex justify space-x-[3rem] flex-col lg:flex-row mt-4">
+        <ul className=" menu-scn    absolute z-50 lg:relative bg-white  lg:bg-transparent lg:text-white text-black transition-all  duration-500 lg:duration-75 font-semibold lg:w-auto lg:h-auto w-[17rem] sm:w-[20rem] left-[-100%] lg:left-0 top-0  h-screen flex">
+          <div className="flex w-full space-x-[3rem] lg:px-0 px-2 flex-col lg:flex-row mt-4">
             <NavLink
               to="/about"
               className={({ isActive }) =>
@@ -30,7 +30,8 @@ export default function Header() {
               text-black
            ${isActive ? "text-white bg-[#ef6d58]" : "lg:text-white"}
              transition duration-200
-             px-4 py-2 rounded-3xl
+             w-full
+             px-4 py-2 lg:rounded-3xl
             `
               }
             >
@@ -42,8 +43,9 @@ export default function Header() {
                 `
             text-black
            ${isActive ? "text-white bg-[#ef6d58]" : "lg:text-white"}
-             transition duration-200
-             px-4 py-2 rounded-3xl
+            transition duration-200
+             w-full
+             px-4 py-2 lg:rounded-3xl
             `
               }
             >
@@ -55,8 +57,9 @@ export default function Header() {
                 `
            text-black
            ${isActive ? "text-white bg-[#ef6d58]" : "lg:text-white"}
-             transition duration-200
-             px-4 py-2 rounded-3xl
+            transition duration-200
+             w-full
+             px-4 py-2 lg:rounded-3xl
             `
               }
             >
@@ -68,8 +71,9 @@ export default function Header() {
                 `
           text-black
            ${isActive ? "text-white bg-[#ef6d58]" : "lg:text-white"}
-             transition duration-200
-             px-4 py-2 rounded-3xl
+            transition duration-200
+             w-full
+             px-4 py-2 lg:rounded-3xl
             `
               }
             >

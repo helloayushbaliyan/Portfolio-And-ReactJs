@@ -13,7 +13,7 @@ export default function Pricingplans(props) {
       subHeading: "",
       description: "",
       textSize:
-        "text-[2.2rem]  z-[100] lg:text-[{3rem}] xl:text-[3.5rem]    2xl:text-[5rem]  leading-[3.2rem] 2xl:leading-[6rem] md:leading-[4rem]",
+        "text-[2.2rem]    lg:text-[{3rem}] xl:text-[3.5rem]    2xl:text-[5rem]  leading-[3.2rem] 2xl:leading-[6rem] md:leading-[4rem]",
       profileSrc: "",
     },
   ];

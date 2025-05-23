@@ -23,7 +23,7 @@ export default function AboutPage(props) {
     subHeading: "",
     description: " ",
     textSize:
-      "text-[2.2rem]  z-[100] lg:text-[{3rem}] xl:text-[3.5rem]  2xl:text-[4.5rem]  leading-[3.2rem] 2xl:leading-[6rem] md:leading-[3.2rem]",
+      "text-[2.2rem]   lg:text-[{3rem}] xl:text-[3.5rem]  2xl:text-[4.5rem]  leading-[3.2rem] 2xl:leading-[6rem] md:leading-[3.2rem]",
   };
 
   return (
@@ -60,9 +60,8 @@ export default function AboutPage(props) {
         </div>
       </div>
       <div className="px-4 sm:px-12 md:px-[3rem] xl:px-[7.5rem] 2xl:px-[10rem] mt-[5rem]">
-        
-        <Brandcolab/>
-        <Subfooter/>
+        <Brandcolab />
+        <Subfooter />
       </div>
     </>
   );

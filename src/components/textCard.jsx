@@ -12,7 +12,7 @@ export default function TextCard({ data, block }) {
               {data.preHeading}
             </h3>
             <div className=" relative flex">
-              <span className={`${data.textSize}  font-bold block relative`}>
+              <span className={`${data.textSize}  font-bold block relative z-0`}>
                 {data.title} <br className="" /> {data.title2}
               </span>
             </div>

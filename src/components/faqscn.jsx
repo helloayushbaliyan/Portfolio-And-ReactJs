@@ -18,10 +18,11 @@ export default function Faqscn(props) {
       description:
         "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.",
       textSize:
-        "text-[2rem] 2xl:text-[3rem]  z-[100] lg:text-[{3rem}] xl:text-[2.5rem] leading-[3.2rem] md:leading-[2.5rem]",
+        "text-[2rem] 2xl:text-[3rem]    lg:text-[{3rem}] xl:text-[2.5rem] leading-[3.2rem] md:leading-[2.5rem]",
     },
   ];
 
+  
   return (
     <>
       <div className="grid lg:grid-cols-2 pt-10 gap-9 lg:gap-0   ">

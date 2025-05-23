@@ -9,7 +9,7 @@ export default function Helpcompanies(props) {
     subHeading: "",
     description: "",
     textSize:
-      "text-[1.2rem]  z-[100] lg:text-[{3rem}] xl:text-[1.5rem]  2xl:text-[1.8rem]  leading-[3.2rem] 2xl:leading-[2.5rem] md:leading-[2rem]",
+      "text-[1.2rem]    lg:text-[{3rem}] xl:text-[1.5rem]  2xl:text-[1.8rem]  leading-[3.2rem] 2xl:leading-[2.5rem] md:leading-[2rem]",
   };
   return (
     <>

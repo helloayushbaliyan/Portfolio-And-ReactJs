@@ -10,7 +10,7 @@ export default function FounderwordsScn(props) {
     subHeading: "",
     description: "",
     textSize:
-      "text-[2.2rem]  z-[100] lg:text-[{3rem}] xl:text-[2.6rem]  2xl:text-[3rem] text-white leading-[3.2rem] 2xl:leading-[4rem] md:leading-[3.2rem]",
+      "text-[2.2rem]    lg:text-[{3rem}] xl:text-[2.6rem]  2xl:text-[3rem] text-white leading-[3.2rem] 2xl:leading-[4rem] md:leading-[3.2rem]",
   };
 
   return (

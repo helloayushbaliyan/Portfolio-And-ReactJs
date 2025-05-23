@@ -9,7 +9,7 @@ export default function Subfooter(props) {
             <div className="text-white mt-10 order-last md:order-first relative ">
               <div className="space-y-3">
                 <div className=" relative flex">
-                  <span className="text-[2.5rem] z-[100] lg:text-[3rem] xl:text-[3.4rem]  2xl:text-[3.7rem] 2xl:leading-[4rem] leading-[3.5rem] md:leading-[3.5rem] font-bold block relative">
+                  <span className="text-[2.5rem]   lg:text-[3rem] xl:text-[3.4rem]  2xl:text-[3.7rem] 2xl:leading-[4rem] leading-[3.5rem] md:leading-[3.5rem] font-bold block relative">
                     We’re Help <br className="hidden lg:block" /> To Build Your{" "}
                     <br className="hidden lg:block" />
                     Dream Project

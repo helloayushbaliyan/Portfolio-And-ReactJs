@@ -10,7 +10,7 @@ export default function MakingComplex(props) {
     description:
       "Agency provides a full service range including technical skills, design, business.",
     textSize:
-      "text-[2.2rem]  z-[100] lg:text-[{3rem}] xl:text-[3.5rem]  2xl:text-[4.5rem]  leading-[3.2rem] 2xl:leading-[6rem] md:leading-[3.2rem]",
+      "text-[2.2rem]    lg:text-[{3rem}] xl:text-[3.5rem]  2xl:text-[4.5rem]  leading-[3.2rem] 2xl:leading-[6rem] md:leading-[3.2rem]",
       profileSrc:"/images/profile_img.png",
       profileDescription:"Understanding, ability to put themselves in the merchant's shoes. It is meant to partner.",
       profileName:"Jenny Murtaugh"
