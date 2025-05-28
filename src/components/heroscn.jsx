@@ -1,5 +1,6 @@
 import React from "react";
-
+import { NavLink } from "react-router-dom";
+import '../app.css';
 export default function Heroscn(props) {
   return (
     <>
@@ -16,7 +17,7 @@ export default function Heroscn(props) {
                     Dream Project
                     <span className=" hidden   lg:block">
                       <img
-                        className=" absolute z-[-100] top-[-2.2rem] right-[4rem] "
+                        className="spin absolute z-[-100] top-[-2.2rem] right-[4rem] "
                         src="/images/star.png"
                         alt=""
                       />
@@ -32,9 +33,9 @@ export default function Heroscn(props) {
                   <button className="bg-[#ee6d58] active:bg-transparent duration-300 px-6 py-[0.8rem] font-bold rounded-md">
                     How We Work
                   </button>
-                  <button className="hover:bg-[#ee6d58] duration-300 px-6 py-[0.8rem] font-bold rounded-md">
-                    Contact Us{" "}
-                  </button>
+                  <NavLink to="/contact" className="hover:bg-[#ee6d58] duration-300 px-6 py-[0.8rem] font-bold rounded-md">
+                    Contact Us
+                  </NavLink>
                 </div>
                 <div className="flex gap-4 mt-8 xl:mt-20">
                   <div className="">

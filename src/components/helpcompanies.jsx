@@ -15,11 +15,20 @@ export default function Helpcompanies(props) {
     <>
       <div className="bg-[#fdf0e8]  overflow-b  grid grid-cols-1 gap-[3rem] sm:grid-cols-2 lg:grid-cols-3  px-4 pt-10 md:px-[2rem]  rounded-xl">
         <div className="relative sm:py-10 pt-[2rem] sm:pt-0">
-          <img
-            className=" absolute top-[-7rem] left-0 w-[8rem]"
-            src="/images/help_company.png"
-            alt=""
-          />
+          <div className="absolute top-[-7rem] left-0">
+            <div className=" relative flex justify-center items-center">
+              <img
+                className=" sale   w-[8rem]"
+                src="/images/help_company.png"
+                alt=""
+              />
+              <img
+                className=" absolute w-[1.5rem]"
+                src="/images/gift-icon.png"
+                alt=""
+              />
+            </div>
+          </div>
           <div className="">
             <TextCard data={textCard} />
             <WhiteBtn btntxt="Contact US" />
@@ -40,7 +49,11 @@ export default function Helpcompanies(props) {
                 src="/images/help-company-3.png"
                 alt=""
               />
-              <img className="h-[13rem] mt-5  hidden sm:block" src="/images/cloud_img.png" alt="" />
+              <img
+                className="h-[13rem] mt-5  hidden sm:block"
+                src="/images/cloud_img.png"
+                alt=""
+              />
             </div>
           </div>
         </div>

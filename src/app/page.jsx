@@ -18,6 +18,7 @@ import Subfooter from "../components/subfooter";
 export default function Homepage(props) {
   return (
     <>
+    
       <Heroscn />
 
       <div className="px-4 sm:px-12 md:px-[3rem] xl:px-[7.5rem] 2xl:px-[10rem] ">

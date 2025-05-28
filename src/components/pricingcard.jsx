@@ -1,6 +1,7 @@
 import React from "react";
 import TextCard from "./textCard";
 import WhiteBtn from "./whiteBtn";
+import { NavLink } from "react-router-dom";
 
 export default function Pricingcard({ pricedata }) {
   return (
@@ -46,9 +47,9 @@ export default function Pricingcard({ pricedata }) {
               <span>{pricedata.benifits_3}</span>
             </li>
           </ul>
-          <div className="">
+          <NavLink to="/contact" className="">
             <WhiteBtn btntxt="Contact US" />
-          </div>
+          </NavLink>
         </div>{" "}
       </div>
     </>

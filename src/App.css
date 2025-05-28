@@ -15,3 +15,21 @@
   transition: all;
   animation-duration: 1s;
 }
+
+.spin {
+  animation: spin 80s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+
+.sale {
+  animation: spin 20s linear infinite;
+}

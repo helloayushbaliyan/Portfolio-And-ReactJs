@@ -37,7 +37,10 @@ export default function Header() {
             >
               <li className="">About</li>
             </NavLink>
-            <NavLink
+
+
+
+            {/* <NavLink
               to="/services"
               className={({ isActive }) =>
                 `
@@ -50,7 +53,10 @@ export default function Header() {
               }
             >
               <li>Services</li>
-            </NavLink>
+            </NavLink> */}
+
+
+            
             <NavLink
               to="/portfolio"
               className={({ isActive }) =>
