@@ -15,7 +15,8 @@ import ServicesPage from "./app/services/page.jsx";
 import PortfolioPage from "./app/portfolio/page.jsx";
 import BlogPage, { fetchdata } from "./app/blog/page.jsx";
 import ContactPage from "./app/contact/page.jsx";
-import Article from "./components/article.jsx";
+import Article, { fetcharticledata } from "./components/article.jsx";
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,7 +26,7 @@ const router = createBrowserRouter(
       <Route path="services" element={<ServicesPage />} />
       <Route path="portfolio" element={<PortfolioPage />} />
       <Route loader={fetchdata} path="/blog" element={<BlogPage />} />
-      <Route path="/article" element={<Article />} />
+      <Route loader={fetcharticledata}  path="/article/:userid" element={<Article />} />
       <Route path="/contact" element={<ContactPage />} />
     </Route>
   )

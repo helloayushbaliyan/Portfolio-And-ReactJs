@@ -17,9 +17,6 @@ export default function BlogPage(props) {
   //   fetchdata();
   // }, []);
 
-
-  console.log(new Date().toISOString().split('T')[0]);
-
   const articleList = useLoaderData();
 
   const [section1Cards, setsection1Cards] = useState([]);
@@ -46,7 +43,7 @@ export default function BlogPage(props) {
       <div className="px-4 sm:px-12 md:px-[3rem] xl:px-[7.5rem] 2xl:px-[10rem] mt-[5rem] space-y-[5rem]">
         <div className="grid md:grid-cols-2 gap-5">
           {section1Cards.map((article) => (
-            <Link to="/article" key={article.id} className="">
+            <Link to={`/article/${article.id}`} key={article.id} className="">
               <BlogCrd
                 data={article}
                 textSize="lg:text-[2.5rem] md:leading-12"
@@ -55,16 +52,17 @@ export default function BlogPage(props) {
           ))}
         </div>
         <hr />
-        <Link
-          to="/blog/id"
+
+        <div
+          to={`/article/${article.id}`}
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-7"
         >
           {section2Cards.slice(2, article).map((article) => (
-            <div key={article.id} className="">
+            <Link to={`/article/${article.id}`} key={article.id} className="">
               <BlogCrd data={article} textSize="text-2xl " />
-            </div>
+            </Link>
           ))}
-        </Link>
+        </div>
         <div className="flex justify-center ">
           <div onClick={loadmore}>
             <WhiteBtn btntxt="Looad More" />
