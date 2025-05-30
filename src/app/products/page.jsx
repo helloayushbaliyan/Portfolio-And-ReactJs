@@ -52,6 +52,10 @@ export default function ProductsPage(props) {
 }
 
 export const fetchproductdata = async () => {
-  const res = await fetch("https://dummyjson.com/products");
+
+// here i ahve to use statemanagement to give the search value on this page 
+
+
+  const res = await fetch(`https://dummyjson.com/products/search?q=`);
   return res.json();
 };
