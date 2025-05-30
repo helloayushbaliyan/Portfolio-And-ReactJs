@@ -11,22 +11,29 @@ import {
 import Layout from "./layout/layout.jsx";
 import Homepage from "./app/page.jsx";
 import AboutPage from "./app/about/page.jsx";
-import ServicesPage from "./app/services/page.jsx";
 import PortfolioPage from "./app/portfolio/page.jsx";
 import BlogPage, { fetchdata } from "./app/blog/page.jsx";
 import ContactPage from "./app/contact/page.jsx";
 import Article, { fetcharticledata } from "./components/article.jsx";
-
+import ProductsPage, { fetchproductdata } from "./app/products/page.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route path="" element={<Homepage />} />
       <Route path="about" element={<AboutPage />} />
-      <Route path="services" element={<ServicesPage />} />
+      <Route
+        loader={fetchproductdata}
+        path="services"
+        element={<ProductsPage />}
+      />
       <Route path="portfolio" element={<PortfolioPage />} />
       <Route loader={fetchdata} path="/blog" element={<BlogPage />} />
-      <Route loader={fetcharticledata}  path="/article/:userid" element={<Article />} />
+      <Route
+        loader={fetcharticledata}
+        path="/article/:userid"
+        element={<Article />}
+      />
       <Route path="/contact" element={<ContactPage />} />
     </Route>
   )
