@@ -5,6 +5,10 @@ import { useState } from "react";
 import WhiteBtn from "../../components/whiteBtn";
 import { data, Link, useLoaderData } from "react-router-dom";
 import { list } from "@material-tailwind/react";
+import Input from "../../components/input";
+import { useContext } from "react";
+import ContextProvider from "../../context/contextProvider";
+import UseProductContext from "../../context/useProductContext";
 
 export default function ProductsPage(props) {
   const productList = useLoaderData();
@@ -13,7 +17,6 @@ export default function ProductsPage(props) {
   useEffect(() => {
     const shuffle = [...productList.products];
     setproductsCards(shuffle);
-    console.log(shuffle);
   }, [productList]);
 
   const herodata = {
@@ -29,10 +32,11 @@ export default function ProductsPage(props) {
   return (
     <>
       <Hero data={herodata} />
-      
+
       <div className="px-4 sm:px-12 md:px-[3rem] xl:px-[7.5rem] 2xl:px-[10rem] mt-[5rem] space-y-[5rem]">
+        <Input />
         <div
-          to={`/article/${article.id}`}
+         
           className="grid md:grid-cols-2 lg:grid-cols-4 gap-7"
         >
           {productsCards.slice(0, article).map((article) => (
@@ -41,6 +45,7 @@ export default function ProductsPage(props) {
             </Link>
           ))}
         </div>
+
         <div className="flex justify-center ">
           <div onClick={loadmore}>
             <WhiteBtn btntxt="Looad More" />
@@ -52,10 +57,9 @@ export default function ProductsPage(props) {
 }
 
 export const fetchproductdata = async () => {
-
-// here i ahve to use statemanagement to give the search value on this page 
-
-
+//     const {product} = useContext(UseProductContext)
+// console.log(product);
+  // here i ahve to use statemanagement to give the search value on this page
   const res = await fetch(`https://dummyjson.com/products/search?q=`);
   return res.json();
 };

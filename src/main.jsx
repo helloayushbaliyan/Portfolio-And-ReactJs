@@ -16,6 +16,7 @@ import BlogPage, { fetchdata } from "./app/blog/page.jsx";
 import ContactPage from "./app/contact/page.jsx";
 import Article, { fetcharticledata } from "./components/article.jsx";
 import ProductsPage, { fetchproductdata } from "./app/products/page.jsx";
+import ContextProvider from "./context/contextProvider.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -40,7 +41,9 @@ const router = createBrowserRouter(
 );
 
 createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router}>
-    <App />
-  </RouterProvider>
+  <ContextProvider>
+    <RouterProvider router={router}>
+      <App />
+    </RouterProvider>
+  </ContextProvider>
 );
