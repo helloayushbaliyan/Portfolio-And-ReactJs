@@ -15,7 +15,7 @@ import PortfolioPage from "./app/portfolio/page.jsx";
 import BlogPage, { fetchdata } from "./app/blog/page.jsx";
 import ContactPage from "./app/contact/page.jsx";
 import Article, { fetcharticledata } from "./components/article.jsx";
-import ProductsPage, { fetchproductdata } from "./app/products/page.jsx";
+import ProductsPage from "./app/products/page.jsx";
 import ContextProvider from "./context/contextProvider.jsx";
 
 const router = createBrowserRouter(
@@ -24,7 +24,6 @@ const router = createBrowserRouter(
       <Route path="" element={<Homepage />} />
       <Route path="about" element={<AboutPage />} />
       <Route
-        loader={fetchproductdata}
         path="services"
         element={<ProductsPage />}
       />

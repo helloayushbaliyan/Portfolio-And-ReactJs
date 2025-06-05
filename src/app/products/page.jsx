@@ -11,13 +11,20 @@ import ContextProvider from "../../context/contextProvider";
 import UseProductContext from "../../context/useProductContext";
 
 export default function ProductsPage(props) {
-  const productList = useLoaderData();
-
   const [productsCards, setproductsCards] = useState([]);
+  const { product } = useContext(UseProductContext);
+console.log(product);
+
   useEffect(() => {
-    const shuffle = [...productList.products];
-    setproductsCards(shuffle);
-  }, [productList]);
+    const fetchProducts = async () => {
+      const res = await fetch(`https://dummyjson.com/products/search?q=${product}`);
+      const data = await res.json();
+      setproductsCards(data.products);
+      console.log(data.products);
+    };
+
+    fetchProducts();
+  }, [product]);
 
   const herodata = {
     title: "Products",
@@ -35,10 +42,7 @@ export default function ProductsPage(props) {
 
       <div className="px-4 sm:px-12 md:px-[3rem] xl:px-[7.5rem] 2xl:px-[10rem] mt-[5rem] space-y-[5rem]">
         <Input />
-        <div
-         
-          className="grid md:grid-cols-2 lg:grid-cols-4 gap-7"
-        >
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-7">
           {productsCards.slice(0, article).map((article) => (
             <Link to={`/article/${article.id}`} key={article.id} className="">
               <BlogCrd data={article} textSize="text-2xl " />
@@ -56,10 +60,10 @@ export default function ProductsPage(props) {
   );
 }
 
-export const fetchproductdata = async () => {
-//     const {product} = useContext(UseProductContext)
-// console.log(product);
-  // here i ahve to use statemanagement to give the search value on this page
-  const res = await fetch(`https://dummyjson.com/products/search?q=`);
-  return res.json();
-};
+// export const fetchproductdata = async () => {
+// //     const {product} = useContext(UseProductContext)
+// // console.log(product);
+//   // here i ahve to use statemanagement to give the search value on this page
+//   const res = await fetch(`https://dummyjson.com/products/search?q=`);
+//   return res.json();
+// };

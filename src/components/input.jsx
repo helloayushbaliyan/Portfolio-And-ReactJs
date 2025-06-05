@@ -8,7 +8,8 @@ export default function Input(props) {
   const { setproduct } = useContext(UseProductContext);
   const handlesearch = (e) => {
     e.preventDefault();
-    setproduct({ search });
+    setproduct(search);
+
     setsearch("");
   };
 
