@@ -17,16 +17,22 @@ import ContactPage from "./app/contact/page.jsx";
 import Article, { fetcharticledata } from "./components/article.jsx";
 import ProductsPage from "./app/products/page.jsx";
 import ContextProvider from "./context/contextProvider.jsx";
+import ProductDetail, {
+  fetchproductdata,
+} from "./components/productDetail.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route path="" element={<Homepage />} />
       <Route path="about" element={<AboutPage />} />
+      <Route path="products" element={<ProductsPage />} />
       <Route
-        path="services"
-        element={<ProductsPage />}
+        loader={fetchproductdata}
+        path="/product/:id"
+        element={<ProductDetail />}
       />
+
       <Route path="portfolio" element={<PortfolioPage />} />
       <Route loader={fetchdata} path="/blog" element={<BlogPage />} />
       <Route

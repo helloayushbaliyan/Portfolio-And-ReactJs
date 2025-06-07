@@ -9,18 +9,21 @@ import Input from "../../components/input";
 import { useContext } from "react";
 import ContextProvider from "../../context/contextProvider";
 import UseProductContext from "../../context/useProductContext";
+import ProductCard from "../../components/productCard";
 
 export default function ProductsPage(props) {
   const [productsCards, setproductsCards] = useState([]);
   const { product } = useContext(UseProductContext);
-console.log(product);
+  console.log(product);
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const res = await fetch(`https://dummyjson.com/products/search?q=${product}`);
+      const res = await fetch(
+        `https://dummyjson.com/products/search?q=${product}`
+      );
       const data = await res.json();
       setproductsCards(data.products);
-      console.log(data.products);
+      console.log();
     };
 
     fetchProducts();
@@ -31,9 +34,9 @@ console.log(product);
     discription:
       "Agency provides a full service range including technical skills, design, business understanding.",
   };
-  const [article, setarticle] = useState(8);
+  const [productList, setproductList] = useState(8);
   const loadmore = () => {
-    setarticle(article + 4);
+    setproductList(productList + 4);
   };
 
   return (
@@ -42,19 +45,30 @@ console.log(product);
 
       <div className="px-4 sm:px-12 md:px-[3rem] xl:px-[7.5rem] 2xl:px-[10rem] mt-[5rem] space-y-[5rem]">
         <Input />
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-7">
-          {productsCards.slice(0, article).map((article) => (
-            <Link to={`/article/${article.id}`} key={article.id} className="">
-              <BlogCrd data={article} textSize="text-2xl " />
-            </Link>
-          ))}
-        </div>
-
-        <div className="flex justify-center ">
-          <div onClick={loadmore}>
-            <WhiteBtn btntxt="Looad More" />
+        {productsCards.length > 0 ? (
+          <div className="">
+            <div className="grid  md:grid-cols-2 lg:grid-cols-4 gap-7">
+              {productsCards.slice(0, productList).map((product) => (
+                <Link
+                  to={`/product/${product.id}`}
+                  key={product.id}
+                  className=""
+                >
+                  <ProductCard data={product} />
+                </Link>
+              ))}
+            </div>
+            <div className="flex justify-center ">
+              <div onClick={loadmore}>
+                <WhiteBtn btntxt="Looad More" />
+              </div>
+            </div>
           </div>
-        </div>
+        ) : (
+          <div className="">
+            <h1 className="text-2xl font-semibold">No Data Found</h1>
+          </div>
+        )}
       </div>
     </>
   );

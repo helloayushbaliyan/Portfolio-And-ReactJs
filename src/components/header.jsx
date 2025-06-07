@@ -39,7 +39,7 @@ export default function Header() {
             </NavLink>
 
             <NavLink
-              to="/services"
+              to="/products"
               className={({ isActive }) =>
                 `
             text-black

@@ -9,8 +9,6 @@ export default function Input(props) {
   const handlesearch = (e) => {
     e.preventDefault();
     setproduct(search);
-
-    setsearch("");
   };
 
   return (
