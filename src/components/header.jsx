@@ -38,10 +38,8 @@ export default function Header() {
               <li className="">About</li>
             </NavLink>
 
-
-
-            {/* <NavLink
-              to="/services"
+            <NavLink
+              to="/products"
               className={({ isActive }) =>
                 `
             text-black
@@ -52,11 +50,9 @@ export default function Header() {
             `
               }
             >
-              <li>Services</li>
-            </NavLink> */}
+              <li>Products</li>
+            </NavLink>
 
-
-            
             <NavLink
               to="/portfolio"
               className={({ isActive }) =>
