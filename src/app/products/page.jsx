@@ -65,8 +65,9 @@ export default function ProductsPage(props) {
             </div>
           </div>
         ) : (
-          <div className="">
-            <h1 className="text-2xl font-semibold">No Data Found</h1>
+          <div className="flex justify-center mt-20">
+            {/* <h1 className="text-2xl font-semibold">No Data Found</h1> */}
+            <img className="w-full lg:w-[60%]" src="/images/data_not_found.webp" alt="" />
           </div>
         )}
       </div>
