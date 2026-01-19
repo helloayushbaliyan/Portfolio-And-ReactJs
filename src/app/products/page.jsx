@@ -13,20 +13,35 @@ import ProductCard from "../../components/productCard";
 
 export default function ProductsPage(props) {
   const [productsCards, setproductsCards] = useState([]);
+
   const { product } = useContext(UseProductContext);
-  console.log(product);
 
   useEffect(() => {
+    const controller = new AbortController();
+    const signal = controller.signal;
+
     const fetchProducts = async () => {
-      const res = await fetch(
-        `https://dummyjson.com/products/search?q=${product}`
-      );
-      const data = await res.json();
-      setproductsCards(data.products);
-      console.log();
+      try {
+        const res = await fetch(
+          `https://dummyjson.com/products/search?q=${product}`,
+          { signal },
+        );
+        const data = await res.json();
+        setproductsCards(data.products);
+      } catch (error) {
+        if (error.name === "AbortError") {
+          console.log("Fetch aborted");
+        } else {
+          console.error("Fetch error:", error);
+        }
+      }
     };
 
     fetchProducts();
+
+    return () => {
+      controller.abort();
+    };
   }, [product]);
 
   const herodata = {
@@ -67,7 +82,11 @@ export default function ProductsPage(props) {
         ) : (
           <div className="flex justify-center mt-20">
             {/* <h1 className="text-2xl font-semibold">No Data Found</h1> */}
-            <img className="w-full lg:w-[60%]" src="/images/data_not_found.webp" alt="" />
+            <img
+              className="w-full lg:w-[60%]"
+              src="/images/data_not_found.webp"
+              alt=""
+            />
           </div>
         )}
       </div>

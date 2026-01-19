@@ -101,7 +101,7 @@ export default function Footer(props) {
         </div>
         <div className="py-12 flex justify-center flex-col sm:flex-row items-center sm:justify-between text-center space-y-6 sm:space-y-0">
           <h1 className="text-sm text-gray-600 ">
-            Copyright © 2022 Laaqiq. All Rights Reserved.
+            Copyright © {new Date().getFullYear()}. All Rights Reserved.
           </h1>
           <div className="flex space-x-12">
             <p>Terms of Use</p>
